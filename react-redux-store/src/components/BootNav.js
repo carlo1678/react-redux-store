@@ -9,9 +9,15 @@ export default function BootNav() {
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="/">E-Commerce</Navbar.Brand>
         <Nav className="mr-auto">
-          <Link to="/">Home</Link>
-          <Link to="/products">Shop</Link>
-          <Link to="/mycart">Cart</Link>
+          <Link className="navlinks" to="/">
+            Home
+          </Link>
+          <Link className="navlinks" to="/products">
+            Shop
+          </Link>
+          <Link className="navlinks" to="/mycart">
+            Cart
+          </Link>
         </Nav>
       </Navbar>
     </div>

@@ -11,7 +11,7 @@ export default function Products() {
   }, []);
   return (
     <div className="container">
-      <h1>Shop Here!</h1>
+      <h1 style={{ color: "white" }}>Shop Here!</h1>
       <div className="grid">
         {products.map((product) => (
           <ProductCards product={product} />

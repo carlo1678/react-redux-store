@@ -28,20 +28,6 @@ export default function ProductCards(props) {
           </Card>
         </div>
       </div>
-
-      {/* <h1>Title</h1>
-      <p>{props.product.title}</p>
-      <img src={props.product.image} alt="" height="200" width="200" />
-      <p>{props.product.price}</p>
-      <p>{props.product.description}</p>
-      <button onClick={() => addProductToCart(dispatch, props.product)}>
-        Add to Cart
-      </button>
-      <Link to="./singleProductPage/:id">
-        <button onClick={() => selectProduct(dispatch, props.product)}>
-          View Product Info
-        </button>
-      </Link> */}
     </div>
   );
 }

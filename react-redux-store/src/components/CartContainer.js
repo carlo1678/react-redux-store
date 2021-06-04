@@ -1,11 +1,22 @@
 import React from "react";
+import { Card, Button } from "react-bootstrap";
 
 export default function CartContainer(props) {
   return (
     <div>
-      <h4>{props.product.title}</h4>
-      <img src={props.product.image} alt="" height="150" width="100" />
-      <p>${props.product.price}</p>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img
+          variant="top"
+          src={props.product.image}
+          alt=""
+          height="200"
+          width="100"
+        />
+        <Card.Body>
+          <Card.Title>{props.product.title}</Card.Title>
+          <Card.Text>${props.product.price}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
