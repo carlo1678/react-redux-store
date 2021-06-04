@@ -6,8 +6,10 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./reducers/rootReducer";
 import logger from "redux-logger";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const store = createStore(rootReducer, applyMiddleware(logger));
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
