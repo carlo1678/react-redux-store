@@ -12,18 +12,30 @@ export default function ProductCards(props) {
       <div className="container">
         <div>
           <Card className="product-cards" style={{ width: "15rem" }}>
-            <Card.Img variant="top" src={props.product.image} />
+            <Card.Img
+              variant="top"
+              className="product-picture"
+              src={props.product.image}
+            />
             <Card.Body>
               <Card.Title>{props.product.title}</Card.Title>
-              <Card.Text></Card.Text>
-              <Button onClick={() => addProductToCart(dispatch, props.product)}>
-                Add to Cart
-              </Button>
-              <Link to="./singleProductPage/:id">
-                <Button onClick={() => selectProduct(dispatch, props.product)}>
-                  View More
+              <Card.Text>${props.product.price}</Card.Text>
+              <div className="first-button">
+                <Button
+                  onClick={() => addProductToCart(dispatch, props.product)}
+                >
+                  Add to Cart
                 </Button>
-              </Link>
+              </div>
+              <div className="second-button">
+                <Link to="./singleProductPage/:id">
+                  <Button
+                    onClick={() => selectProduct(dispatch, props.product)}
+                  >
+                    View More
+                  </Button>
+                </Link>
+              </div>
             </Card.Body>
           </Card>
         </div>

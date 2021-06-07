@@ -9,10 +9,10 @@ export default function CartContainer(props) {
           variant="top"
           src={props.product.image}
           alt=""
-          height="200"
-          width="100"
+          // height="200"
+          // width="100"
         />
-        <Card.Body>
+        <Card.Body className="cardBody">
           <Card.Title>{props.product.title}</Card.Title>
           <Card.Text>${props.product.price}</Card.Text>
         </Card.Body>

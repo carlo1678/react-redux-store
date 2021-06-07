@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 export default function BootNav() {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">E-Commerce</Navbar.Brand>
+      <Navbar className="navbar-primary" variant="dark">
+        <Navbar.Brand className="homeTitle" href="/">
+          E-Commerce
+        </Navbar.Brand>
         <Nav className="mr-auto">
           <Link className="navlinks" to="/">
             Home

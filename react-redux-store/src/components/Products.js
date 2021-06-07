@@ -11,12 +11,14 @@ export default function Products() {
   }, []);
   return (
     <div className="products-container">
+      <h1 style={{ color: "#c4dbe0" }}>Shop Here!</h1>
       <div className="container">
-        <h1 style={{ color: "#c4dbe0" }}>Shop Here!</h1>
-        <div className="grid">
-          {products.map((product) => (
-            <ProductCards product={product} />
-          ))}
+        <div>
+          <div className="grid">
+            {products.map((product) => (
+              <ProductCards product={product} />
+            ))}
+          </div>
         </div>
       </div>
     </div>

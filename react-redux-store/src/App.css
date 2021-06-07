@@ -3,13 +3,29 @@
 }
 
 .landing-div {
-  background: url(../src/assets/LandingPic.jpg) center;
+  background: url(../src/assets/IMG_1243.jpg) center;
   background-size: cover;
   height: 100vh;
 }
 
 .nav {
   color: #c4dbe0;
+}
+
+.navbar-primary {
+  background-color: #c4dbe0 !important;
+}
+
+.cardBody {
+  height: 200px !important;
+  width: 375px !important;
+  background-color: white;
+}
+
+.example-pic-1 {
+  background: url(../src/assets/IMG_1244.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -32,7 +48,6 @@
 .cart-container {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
-  width: 100% !important;
   height: 100vh !important;
   margin-left: 160px;
   margin-right: auto;
@@ -50,13 +65,15 @@
 }
 
 .products-container {
+  margin-left: auto;
+  margin-right: auto;
   background: #0c6980;
   height: 100%;
   width: 100vw;
 }
 
 .cart-div {
-  height: 100%;
+  background-color: #2eb5e0;
 }
 
 .product-text {
@@ -69,7 +86,11 @@
 .navlinks {
   font-size: 20px;
   padding: 10px;
-  color: white;
+  color: #00a8a8;
+}
+
+.homeTitle {
+  color: #00a8a8 !important;
 }
 
 body {
@@ -96,13 +117,35 @@ body {
 }
 
 .card-body {
-  height: 40vh !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 375px;
+  background: ;
 }
 
 .product-cards {
   background-color: #2eb5e0 !important;
+  width: 375px !important;
 }
 
-.card-img {
-  background-color: #00a8a8 !important ;
+.card-img-top {
+  display: flex !important;
+  justify-items: center !important;
+  height: 400px !important;
+  width: 375px !important;
+}
+
+.product-picture {
+  background-color: #00a8a8 !important;
+}
+
+.first-button {
+  padding: 7.5px;
+}
+
+.container {
+  display: flex !important;
+  justify-content: center;
 }

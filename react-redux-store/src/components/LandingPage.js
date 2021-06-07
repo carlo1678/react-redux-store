@@ -1,4 +1,6 @@
 import React from "react";
+import IMG_1244 from "../assets/IMG_1244.jpg";
+import IMG_1245 from "../assets/IMG_1245.jpg";
 
 export default function LandingPage() {
   return (
@@ -14,18 +16,14 @@ export default function LandingPage() {
       </div>
       <div className="example-pic-container">
         <img
-          src="https://afremov.com/images/product/image_2329.jpeg"
+          className="example-pic-1"
+          src={IMG_1244}
           alt=""
           height="700"
-          width="700"
-        ></img>
-        <img
-          src="https://images.saatchiart.com/saatchi/91278/art/6611261/5680931-RZTXQSBQ-7.jpg"
-          alt=""
-          height="700"
-          width="700"
-        ></img>
-        <img
+          width="500"
+        />
+        <img src={IMG_1245} alt="" height="700" width="500"></img>
+        {/* <img
           src="https://media-cdn.tripadvisor.com/media/photo-s/0d/5d/30/53/nice-painting-from-artist.jpg"
           alt=""
           height="700"
@@ -36,7 +34,7 @@ export default function LandingPage() {
           alt=""
           height="700"
           width="700"
-        ></img>
+        ></img> */}
       </div>
     </div>
   );
