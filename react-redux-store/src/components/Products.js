@@ -10,12 +10,14 @@ export default function Products() {
     getProducts(dispatch);
   }, []);
   return (
-    <div className="container">
-      <h1 style={{ color: "white" }}>Shop Here!</h1>
-      <div className="grid">
-        {products.map((product) => (
-          <ProductCards product={product} />
-        ))}
+    <div className="products-container">
+      <div className="container">
+        <h1 style={{ color: "#c4dbe0" }}>Shop Here!</h1>
+        <div className="grid">
+          {products.map((product) => (
+            <ProductCards product={product} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ export default function ShoppingCart() {
   const cart = useSelector((state) => state.cart);
   return (
     <div className="cart-div">
-      <h1 style={{ color: "white" }}>Your Cart!</h1>
+      <h1 className="fullcartheading">Your Cart!</h1>
       <div className="cart-container">
         {cart.map((product) => (
           <CartContainer product={product} />

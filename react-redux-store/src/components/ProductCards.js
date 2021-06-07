@@ -8,14 +8,14 @@ import { Card, Button } from "react-bootstrap";
 export default function ProductCards(props) {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="product-container">
       <div className="container">
         <div>
           <Card className="product-cards" style={{ width: "15rem" }}>
             <Card.Img variant="top" src={props.product.image} />
             <Card.Body>
               <Card.Title>{props.product.title}</Card.Title>
-              <Card.Text>{props.product.description}</Card.Text>
+              <Card.Text></Card.Text>
               <Button onClick={() => addProductToCart(dispatch, props.product)}>
                 Add to Cart
               </Button>

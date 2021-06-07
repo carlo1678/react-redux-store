@@ -3,7 +3,6 @@ import React from "react";
 export default function LandingPage() {
   return (
     <div className="landingpage">
-      <h1>Welcome to my E-Commerce Site!</h1>
       <div className="landing-div">
         <h1 className="landing-text">Welcome to our Art Site!</h1>
         <h3 className="landing-text">
