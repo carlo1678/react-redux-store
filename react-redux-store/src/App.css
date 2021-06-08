@@ -3,7 +3,7 @@
 }
 
 .landing-div {
-  background: url(../src/assets/IMG_1243.jpg) center;
+  background: url("https://i.imgur.com/qiYpQv6.jpg") center;
   background-size: cover;
   height: 100vh;
 }
@@ -22,10 +22,20 @@
   background-color: white;
 }
 
+.card {
+  margin-bottom: 100px !important;
+}
+
 .example-pic-1 {
   background: url(../src/assets/IMG_1244.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#cardP {
+  display: flex;
+  padding-left: 750px;
+  font-size: 30px;
 }
 
 .footer {
@@ -47,9 +57,9 @@
 
 .cart-container {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  height: 100vh !important;
-  margin-left: 160px;
+  grid-template-columns: repeat(1, 1fr) !important;
+  height: 100% !important;
+  margin-left: 180px;
   margin-right: auto;
 }
 .item-container {
@@ -116,14 +126,13 @@ body {
   height: 200px !important;
 }
 
-.card-body {
+/* .card-body {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 250px;
   width: 375px;
-  background: ;
-}
+} */
 
 .product-cards {
   background-color: #2eb5e0 !important;

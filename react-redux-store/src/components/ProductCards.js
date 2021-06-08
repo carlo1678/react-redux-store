@@ -15,14 +15,14 @@ export default function ProductCards(props) {
             <Card.Img
               variant="top"
               className="product-picture"
-              src={props.product.image}
+              src={props.painting.image}
             />
             <Card.Body>
-              <Card.Title>{props.product.title}</Card.Title>
-              <Card.Text>${props.product.price}</Card.Text>
+              <Card.Title>{props.painting.name}</Card.Title>
+              <Card.Text>${props.painting.price}</Card.Text>
               <div className="first-button">
                 <Button
-                  onClick={() => addProductToCart(dispatch, props.product)}
+                  onClick={() => addProductToCart(dispatch, props.painting)}
                 >
                   Add to Cart
                 </Button>
@@ -30,7 +30,7 @@ export default function ProductCards(props) {
               <div className="second-button">
                 <Link to="./singleProductPage/:id">
                   <Button
-                    onClick={() => selectProduct(dispatch, props.product)}
+                    onClick={() => selectProduct(dispatch, props.painting)}
                   >
                     View More
                   </Button>

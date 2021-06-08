@@ -1,4 +1,5 @@
 import "./App.css";
+import { data } from "./data/data";
 import BootNav from "./components/BootNav";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
@@ -23,13 +24,13 @@ function App() {
             <LandingPage />
           </Route>
           <Route path="/products">
-            <Products />
+            <Products data={data} />
           </Route>
           <Route path="/mycart">
-            <ShoppingCart />
+            <ShoppingCart data={data} />
           </Route>
           <Route>
-            <IndividualProduct />
+            <IndividualProduct data={data} />
           </Route>
         </Switch>
       </Router>

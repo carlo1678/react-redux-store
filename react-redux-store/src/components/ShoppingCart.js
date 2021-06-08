@@ -8,8 +8,8 @@ export default function ShoppingCart() {
     <div className="cart-div">
       <h1 className="fullcartheading">Your Cart!</h1>
       <div className="cart-container">
-        {cart.map((product) => (
-          <CartContainer product={product} />
+        {cart.map((painting) => (
+          <CartContainer painting={painting} />
         ))}
       </div>
     </div>

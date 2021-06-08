@@ -24,11 +24,16 @@ export default function ShoppingCart(props) {
         </Card.Footer>
       </Card> */}
       <div className="individualP">
-        <Card>
-          <Card.Img variant="top" src={selectedProduct.image} />
+        <Card className="wholeCard">
+          <Card.Img
+            className="cardImage"
+            variant="top"
+            src={selectedProduct.image}
+          />
           <Card.Body className="individualPBody">
             <Card.Title>{selectedProduct.title}</Card.Title>
             <Card.Text>{selectedProduct.description}</Card.Text>
+            <Card.Text>${selectedProduct.price}</Card.Text>
             <Button
               variant="primary"
               onClick={() => addProductToCart(dispatch, props.product)}
