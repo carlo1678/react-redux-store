@@ -71,6 +71,90 @@ export const data = [
           blacklight: "https://i.imgur.com/ykI8dHb.jpg",
         },
       },
+      {
+        id: 9,
+        name: "Painting Nine",
+        description:
+          "A small circular canvas, with a beautiful view of the sea, as well as the sun setting behind some nicely painted clouds.",
+        price: 25.0,
+        image: "https://i.imgur.com/S92brYN.jpg",
+      },
+      {
+        id: 10,
+        name: "Painting Ten",
+        description:
+          "A beautiful, oil based painting on a square canvas, depicting a landscape including the ocean and views of the sunset.",
+        price: 35.0,
+        image: "https://i.imgur.com/VtkxKuz.jpg",
+      },
+      {
+        id: 11,
+        name: "Painting Eleven",
+        description:
+          "An abstract-type painting, littered with a multitude of different colors, creating a wavy like pattern upon the canvas.",
+        price: 45.0,
+        image: {
+          normal: "https://i.imgur.com/jXZNCei.jpg",
+          blacklight: "https://i.imgur.com/D8FyPIU.jpg",
+        },
+      },
+      {
+        id: 12,
+        name: "Painting Twelve",
+        description:
+          "Another abstract-type painting, utilizing bright and vibrant colors, creating yet again, a wavy like pattern upon the canvas.",
+        price: 45.0,
+        image: {
+          normal: "https://i.imgur.com/ftu6Bd5.jpg",
+          blacklight: "https://i.imgur.com/L3lW7Ft.jpg",
+        },
+      },
+      {
+        id: 13,
+        name: "Painting Thirteen",
+        description:
+          "An abstract-type painting, utilizing a mix of vibrant and darkish colors, to create a synthesizing multi-direction wave-like pattern upon the canvas.",
+        price: 45.0,
+        image: {
+          normal: "https://i.imgur.com/N0HDWRa.jpg",
+          blacklight: "https://i.imgur.com/VGdWVAv.jpg",
+        },
+      },
+      {
+        id: 14,
+        name: "Painting Fourteen",
+        description:
+          "A small but in-depth depiction of a sunset over the views of mountains.",
+        price: 25.0,
+        image: "https://i.imgur.com/NUSikgJ.jpg",
+      },
+      {
+        id: 15,
+        name: "Painting Fifteen",
+        description:
+          "An abstract-like painting that seemingly looks like it could be depicting a landscape of some sorts.",
+        price: 45.0,
+        image: {
+          normal: "https://i.imgur.com/00eAL79.jpg",
+          blacklight: "https://i.imgur.com/vVbkAWh.jpg",
+        },
+      },
+      {
+        id: 16,
+        name: "Painting Sixteen",
+        description:
+          "A painting utilizing palm leaves as stencils, with a certain opaqueness to it.",
+        price: 35.0,
+        image: "https://i.imgur.com/VgN5qYr.jpg",
+      },
+      {
+        id: 17,
+        name: "Painting Seventeen",
+        description:
+          "Another painting utilizing palm leaves as stencils, leaving a very unique design that stands out to the viewer.",
+        price: 40.0,
+        image: "https://i.imgur.com/3kgjo6p.jpg",
+      },
     ],
   },
 ];

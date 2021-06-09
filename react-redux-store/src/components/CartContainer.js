@@ -8,6 +8,7 @@ export default function CartContainer(props) {
         <Card style={{ width: "375px" }}>
           <p id="cardP">{props.painting.price}</p>
           <Card.Img
+            className="cartImage"
             variant="top"
             src={props.painting.image}
             alt=""

@@ -1,4 +1,6 @@
-const initialState = [];
+const initialState = {
+  singleArray: [],
+};
 const singleProduct = (state = initialState, action) => {
   switch (action.type) {
     case "SET_SELECTED_PRODUCT":

@@ -7,6 +7,9 @@ import { Card, Button } from "react-bootstrap";
 
 export default function ProductCards(props) {
   const dispatch = useDispatch();
+  // const normalPic = props.painting.image;
+  // const alternatePic = props.painting.image.blacklight;
+
   return (
     <div className="product-container">
       <div className="container">

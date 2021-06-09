@@ -2,31 +2,19 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Card, Button } from "react-bootstrap";
 import { addProductToCart } from "../actions/cartActions";
+import { data } from "../data/data";
 import "../styles/IndividualProduct.css";
 
-export default function ShoppingCart(props) {
+export default function IndividualProduct(props) {
   const selectedProduct = useSelector((state) => state.singleProduct);
   const dispatch = useDispatch();
+  // console.log(props.painting);
   return (
     <div>
-      {/* <Card className="text-center">
-        <Card.Header>{selectedProduct.title}</Card.Header>
-        <Card.Body>
-          <Card.Img
-            variant="top"
-            className="cardimage"
-            src={selectedProduct.image}
-          />
-          <Card.Text>{selectedProduct.description}</Card.Text>
-        </Card.Body>
-        <Card.Footer className="text-muted">
-          ${selectedProduct.price}
-        </Card.Footer>
-      </Card> */}
       <div className="individualP">
         <Card className="wholeCard">
           <Card.Img
-            className="cardImage"
+            className="indivCardImage"
             variant="top"
             src={selectedProduct.image}
           />
@@ -36,7 +24,7 @@ export default function ShoppingCart(props) {
             <Card.Text>${selectedProduct.price}</Card.Text>
             <Button
               variant="primary"
-              onClick={() => addProductToCart(dispatch, props.product)}
+              onClick={() => addProductToCart(dispatch, selectedProduct)}
             >
               Add To Cart
             </Button>
