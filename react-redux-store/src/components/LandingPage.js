@@ -1,4 +1,5 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
 import IMG_1244 from "../assets/IMG_1244.jpg";
 import IMG_1245 from "../assets/IMG_1245.jpg";
 
@@ -11,8 +12,31 @@ export default function LandingPage() {
           We hope you enjoy some of the products we have to offer!
         </h3>
       </div>
-      <div>
-        <h1>Example Pictures!</h1>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/jXZNCei.jpg"
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/ftu6Bd5.jpg"
+            alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/N0HDWRa.jpg"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+      <div className="headingDiv">
+        <h1>Multiple Different Styles of Art!</h1>
       </div>
       <div className="example-pic-container">
         <img
@@ -23,18 +47,6 @@ export default function LandingPage() {
           width="500"
         />
         <img src={IMG_1245} alt="" height="700" width="500"></img>
-        {/* <img
-          src="https://media-cdn.tripadvisor.com/media/photo-s/0d/5d/30/53/nice-painting-from-artist.jpg"
-          alt=""
-          height="700"
-          width="700"
-        ></img>
-        <img
-          src="http://www.simplyniceart.com/wp-content/uploads/2016/01/420-image-A-Tree-Painting.png"
-          alt=""
-          height="700"
-          width="700"
-        ></img> */}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addProductToCart } from "../actions/cartActions";
 import { selectProduct } from "../actions/singleProductActions";
@@ -7,18 +7,23 @@ import { Card, Button } from "react-bootstrap";
 
 export default function ProductCards(props) {
   const dispatch = useDispatch();
-  // const normalPic = props.painting.image;
-  // const alternatePic = props.painting.image.blacklight;
+  const [imageType, setImageType] = useState("normal");
 
+  const imagePainting =
+    Object.keys(props.painting.image).length === 2
+      ? props.painting.image[imageType]
+      : props.painting.image;
   return (
     <div className="product-container">
       <div className="container">
-        <div>
+        <div className="actualCardContainer">
           <Card className="product-cards" style={{ width: "15rem" }}>
             <Card.Img
+              onMouseEnter={() => setImageType("blacklight")}
+              onMouseLeave={() => setImageType("normal")}
               variant="top"
               className="product-picture"
-              src={props.painting.image}
+              src={imagePainting}
             />
             <Card.Body>
               <Card.Title>{props.painting.name}</Card.Title>

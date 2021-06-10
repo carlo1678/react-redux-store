@@ -2,18 +2,108 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <h1>Jess's Art Studio</h1>
-      <h3>About Us</h3>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
+    <div>
+      <footer className="bg-white">
+        <div className="container py-5">
+          <div className="row py-4">
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <img src="img/logo.png" alt="" width="180" className="mb-3" />
+              <p className="font-italic text-muted">
+                Jess's Art Studio was an idea put together by her and her
+                boyfriend. All artwork incorporated into the website was done by
+                Jessica herself! Her boyfriend created the website!
+              </p>
+              <ul className="list-inline mt-4">
+                <li className="list-inline-item">
+                  <a href="#" target="_blank" title="twitter">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#" target="_blank" title="facebook">
+                    <i className="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#" target="_blank" title="instagram">
+                    <i className="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#" target="_blank" title="pinterest">
+                    <i className="fa fa-pinterest"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#" target="_blank" title="vimeo">
+                    <i className="fa fa-vimeo"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 className="text-uppercase font-weight-bold mb-4">Shop</h6>
+              <ul className="list-unstyled mb-0">
+                <li className="mb-2">
+                  <a href="/products" class="text-muted">
+                    Paintings!
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 className="text-uppercase font-weight-bold mb-4">Socials!</h6>
+              <ul className="list-unstyled mb-0">
+                <li className="mb-2">
+                  <a
+                    href="https://www.instagram.com/_____acissej_____/"
+                    className="text-muted"
+                  >
+                    Jess' Instagram!
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.instagram.com/cartothelow/"
+                    className="text-muted"
+                  >
+                    Carlo's Instagram!
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a
+                    href="https://www.facebook.com/carlo.carbonell"
+                    className="text-muted"
+                  >
+                    Facebook!
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-lg-0">
+              <h6 className="text-uppercase font-weight-bold mb-4">
+                Newsletter
+              </h6>
+              <p className="text-muted mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                itaque temporibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
+
+/* <h2>Jess's Art Studio</h2>
+      <h4>About Us</h4>
+      <ul>
+        <li>
+          <p>
+            Jess's Art Studio was an idea put together by her and her boyfriend.
+            All artwork incorporated into the website was done by Jessica
+            herself! Her boyfriend created the website!
+          </p>
+        </li>
+      </ul> */

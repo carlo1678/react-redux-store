@@ -13,6 +13,7 @@ import {
 import Products from "./components/Products";
 import ShoppingCart from "./components/ShoppingCart";
 import IndividualProduct from "./components/IndividualProduct";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -23,14 +24,17 @@ function App() {
           <Route exact path="/">
             <LandingPage />
           </Route>
-          <Route path="/products">
+          <Route exact path="/products">
             <Products data={data} />
           </Route>
-          <Route path="/mycart">
-            <ShoppingCart data={data} />
+          <Route exact path="/mycart">
+            <ShoppingCart />
           </Route>
-          <Route>
+          <Route path="/singleProductPage/:id">
             <IndividualProduct data={data} />
+          </Route>
+          <Route path="/*" component={PageNotFound}>
+            <PageNotFound />
           </Route>
         </Switch>
       </Router>

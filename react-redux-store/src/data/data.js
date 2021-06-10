@@ -24,7 +24,7 @@ export const data = [
         id: 3,
         name: "Painting Three",
         description:
-          "A asbtract, space-like painting. Depicting what could be seen as an asteroid belt, with a couple planet-like figures looming in the distance.",
+          "An asbtract, space-like painting. Depicting what could be seen as an asteroid belt, with a couple planet-like figures looming in the distance.",
         price: 45.0,
         image: "https://i.imgur.com/iFcxHWY.jpg",
       },

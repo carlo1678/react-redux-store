@@ -1,26 +1,30 @@
-import React from "react";
-import { Card, Button } from "react-bootstrap";
+import React, { useState } from "react";
 
 export default function CartContainer(props) {
+  const [imageType, setImageType] = useState("normal");
+  const imagePainting =
+    Object.keys(props.painting.image).length === 2
+      ? props.painting.image[imageType]
+      : props.painting.image;
+
   return (
     <div>
-      <div className="cartInfo">
-        <Card style={{ width: "375px" }}>
-          <p id="cardP">{props.painting.price}</p>
-          <Card.Img
-            className="cartImage"
-            variant="top"
-            src={props.painting.image}
+      <div className="actualCartContainer">
+        <div className="image">
+          <img
+            onMouseEnter={() => setImageType("blacklight")}
+            onMouseLeave={() => setImageType("normal")}
+            src={imagePainting}
+            height="200"
             alt=""
-            // height="200"
-            // width="100"
           />
-
-          <Card.Body className="cardBody">
-            <Card.Title>{props.painting.name}</Card.Title>
-            <p>{props.painting.description}</p>
-          </Card.Body>
-        </Card>
+        </div>
+        <div className="description">
+          <p>{props.painting.description}</p>
+        </div>
+        <div className="price">
+          <p>Price: ${props.painting.price}</p>
+        </div>
       </div>
     </div>
   );

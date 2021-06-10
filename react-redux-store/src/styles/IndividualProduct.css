@@ -5,27 +5,33 @@
   background-color: #0c6980;
 }
 
-.individualPBody {
-  background-color: #00a8a8;
-  height: 400px !important;
-}
-
 .wholeCard {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   background-color: #2eb5e0 !important;
   border: black !important;
-  border-width: 50px !important;
   border-radius: 35px !important;
-  height: 70vh;
-  margin-top: 100px;
+  height: 85vh !important;
+  /* width: 75% !important; */
+  margin-top: 60px;
 }
 
 .card-body {
+  background-color: #00a8a8;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 250px;
+  height: 400px;
   width: 450px;
+}
+
+.indivCardImage {
+  height: 70vh !important;
+  width: 30vw !important;
+}
+
+.indivButton {
+  display: flex;
+  justify-content: center;
 }
