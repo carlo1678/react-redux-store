@@ -6,7 +6,7 @@ The whole idea started for this website through my girlfriend. My lovely girlfri
 
 ## Screenshots
 
-![Home Page](../assets/LandingPage.png)
+![Home Page](react-redux-store\react-redux-store\src\assets\LandingPage.png)
 
 ## Technologies Used
 
