@@ -155,6 +155,11 @@ export const data = [
         price: 40.0,
         image: "https://i.imgur.com/3kgjo6p.jpg",
       },
+      {
+        id: 18,
+        name: "Painting Eighteen",
+        description: "",
+      },
     ],
   },
 ];

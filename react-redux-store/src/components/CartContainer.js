@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function CartContainer(props) {
   const [imageType, setImageType] = useState("normal");
+
   const imagePainting =
     Object.keys(props.painting.image).length === 2
       ? props.painting.image[imageType]
@@ -20,10 +21,10 @@ export default function CartContainer(props) {
           />
         </div>
         <div className="description">
-          <p>{props.painting.description}</p>
+          <p className="descriptionP">{props.painting.description}</p>
         </div>
         <div className="price">
-          <p>Price: ${props.painting.price}</p>
+          <p className="priceP">Price: ${props.painting.price}</p>
         </div>
       </div>
     </div>

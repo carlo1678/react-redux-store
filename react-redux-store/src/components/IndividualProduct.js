@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Card, Button } from "react-bootstrap";
 import { addProductToCart } from "../actions/cartActions";
-
-import "../styles/IndividualProduct.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function IndividualProduct(props) {
   const selectedProduct = useSelector((state) => state.singleProduct);
@@ -18,7 +18,7 @@ export default function IndividualProduct(props) {
     <div>
       <div className="individualP">
         <Card className="wholeCard">
-          <div className="indivImageDiv">
+          <div className="indivCardDiv">
             <Card.Img
               onMouseEnter={() => setImageType("blacklight")}
               onMouseLeave={() => setImageType("normal")}
@@ -35,7 +35,12 @@ export default function IndividualProduct(props) {
             <div className="indivButton">
               <Button
                 variant="primary"
-                onClick={() => addProductToCart(dispatch, selectedProduct)}
+                onClick={() => {
+                  addProductToCart(dispatch, selectedProduct);
+                  toast.info("Successfully added to cart!", {
+                    position: toast.POSITION.TOP_CENTER,
+                  });
+                }}
               >
                 Add To Cart
               </Button>

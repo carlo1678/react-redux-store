@@ -14,6 +14,9 @@ import Products from "./components/Products";
 import ShoppingCart from "./components/ShoppingCart";
 import IndividualProduct from "./components/IndividualProduct";
 import PageNotFound from "./components/PageNotFound";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
           <Route exact path="/mycart">
             <ShoppingCart />
           </Route>
-          <Route path="/singleProductPage/:id">
+          <Route exact path="/singleProductPage/:id">
             <IndividualProduct data={data} />
           </Route>
           <Route path="/*" component={PageNotFound}>

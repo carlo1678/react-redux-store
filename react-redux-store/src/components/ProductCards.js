@@ -4,6 +4,8 @@ import { addProductToCart } from "../actions/cartActions";
 import { selectProduct } from "../actions/singleProductActions";
 import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ProductCards(props) {
   const dispatch = useDispatch();
@@ -13,6 +15,7 @@ export default function ProductCards(props) {
     Object.keys(props.painting.image).length === 2
       ? props.painting.image[imageType]
       : props.painting.image;
+
   return (
     <div className="product-container">
       <div className="container">
@@ -30,7 +33,12 @@ export default function ProductCards(props) {
               <Card.Text>${props.painting.price}</Card.Text>
               <div className="first-button">
                 <Button
-                  onClick={() => addProductToCart(dispatch, props.painting)}
+                  onClick={() => {
+                    addProductToCart(dispatch, props.painting);
+                    toast.info("Successfully added to cart!", {
+                      position: toast.POSITION.TOP_CENTER,
+                    });
+                  }}
                 >
                   Add to Cart
                 </Button>

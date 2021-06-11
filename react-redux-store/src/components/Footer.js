@@ -13,33 +13,6 @@ export default function Footer() {
                 boyfriend. All artwork incorporated into the website was done by
                 Jessica herself! Her boyfriend created the website!
               </p>
-              <ul className="list-inline mt-4">
-                <li className="list-inline-item">
-                  <a href="#" target="_blank" title="twitter">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#" target="_blank" title="facebook">
-                    <i className="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#" target="_blank" title="instagram">
-                    <i className="fa fa-instagram"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#" target="_blank" title="pinterest">
-                    <i className="fa fa-pinterest"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#" target="_blank" title="vimeo">
-                    <i className="fa fa-vimeo"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
             <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
               <h6 className="text-uppercase font-weight-bold mb-4">Shop</h6>
@@ -82,11 +55,13 @@ export default function Footer() {
             </div>
             <div className="col-lg-4 col-md-6 mb-lg-0">
               <h6 className="text-uppercase font-weight-bold mb-4">
-                Newsletter
+                Collaborations!
               </h6>
               <p className="text-muted mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                itaque temporibus.
+                If anyone would like to collaborate, please feel free to reach
+                out to myself (Carlo) or Jessica, through the links to our
+                Instagram pages! We would love to work with some of the aspiring
+                artists in the industry!
               </p>
             </div>
           </div>
