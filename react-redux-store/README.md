@@ -7,6 +7,10 @@ The whole idea started for this website through my girlfriend. My lovely girlfri
 ## Screenshots
 
 [![Landing-Page.png](https://i.postimg.cc/RZp9mnFf/Landing-Page.png)](https://postimg.cc/ZWNXFn6K)
+[![ShopPage.png](https://i.postimg.cc/qvVyLz0s/ShopPage.png)](https://postimg.cc/svmMffMx)\
+[![Indiv-Prod-Page.png](https://i.postimg.cc/SN0fZZfY/Indiv-Prod-Page.png)](https://postimg.cc/Z0cNnxgJ)
+[![CartPage.png](https://i.postimg.cc/J4qHbK6L/CartPage.png)](https://postimg.cc/xcXdQGVx)
+[![Error-Page.png](https://i.postimg.cc/1zNzYKH4/Error-Page.png)](https://postimg.cc/B84sjHRG)
 
 ## Technologies Used
 
@@ -49,3 +53,8 @@ Some of the biggest takeaways that I had from this website were as follows: Webs
 2. Ideally, I’d like to clean up the shop page just a little bit, and maybe add a flip effect to each card, which then shows the details about the cards.
 3. I’d also like for the cart to be a modal (which is when another little screen pops up with the screen before in the background), which pops up over the current screen and displays your cart.
 4. I plan on adding a back-end to this project, user authentication, and adding Swipe in the future so people can actually purchase paintings when the time comes.
+
+### Medium Article!
+
+I also wrote a Medium article about this website. It can be found [![here](https://carlo1678.medium.com/my-react-solo-project-52a1604f212c)]
+)
