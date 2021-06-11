@@ -70,15 +70,3 @@ export default function Footer() {
     </div>
   );
 }
-
-/* <h2>Jess's Art Studio</h2>
-      <h4>About Us</h4>
-      <ul>
-        <li>
-          <p>
-            Jess's Art Studio was an idea put together by her and her boyfriend.
-            All artwork incorporated into the website was done by Jessica
-            herself! Her boyfriend created the website!
-          </p>
-        </li>
-      </ul> */

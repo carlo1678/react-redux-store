@@ -158,7 +158,10 @@ export const data = [
       {
         id: 18,
         name: "Painting Eighteen",
-        description: "",
+        description:
+          "A small painting of a snowy log cabin, on a beautiful sunny day, with pine trees looming in the distance.",
+        price: 30.0,
+        image: "https://i.imgur.com/W6UYKPf.jpg",
       },
     ],
   },
