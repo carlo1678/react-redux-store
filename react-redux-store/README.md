@@ -56,5 +56,5 @@ Some of the biggest takeaways that I had from this website were as follows: Webs
 
 ### Medium Article!
 
-I also wrote a Medium article about this website. It can be found [![here](https://carlo1678.medium.com/my-react-solo-project-52a1604f212c)]
+I also wrote a Medium article about this website. It can be found here: https://carlo1678.medium.com/my-react-solo-project-52a1604f212c
 )
