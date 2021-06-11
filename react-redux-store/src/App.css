@@ -291,6 +291,10 @@ i {
   justify-content: center;
 }
 
+.commerce {
+  padding-left: 20px;
+}
+
 .slide-container {
   display: flex;
 

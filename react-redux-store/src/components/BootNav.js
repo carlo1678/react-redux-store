@@ -8,7 +8,7 @@ export default function BootNav() {
     <div>
       <Navbar className="navbar-primary" variant="dark">
         <Navbar.Brand className="homeTitle" href="/">
-          E-Commerce
+          <span className="commerce">E-Commerce</span>
         </Navbar.Brand>
         <Nav className="mr-auto">
           <Link className="navlinks" to="/">
