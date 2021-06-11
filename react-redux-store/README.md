@@ -1,22 +1,7 @@
-# React Redux Store
+## React Solo Project
 
-You will use this boilerplate code to create a simple mock e-commerce store. If you think of e-commerce stores, a few things should come to mind.
+The whole idea started for this website through my girlfriend. My lovely girlfriend Jessica paints incredible pictures. She has never really had an outlet to put her paintings out there for the world to see, so I decided to create her a website. I wanted the design to be super simplistic, but still show some website design capability. The end-result came out looking much better than I had initially anticipated.
 
-## Components
+## Screenshots
 
-- Landing Page
-- Products Page
-- Individual Product Page
-- Navbar
-- Cart
-- About Us
-- Footer
-
-## Routes
-
-Think about what your Routes should be for this store. You can make more or make less, there is a level that you will have to decide what you want to create. At a minimum, you need the following:
-
-- Landing Page
-- Products Page
-- Individual Product Page
-- About Us Page
+## Key Features
