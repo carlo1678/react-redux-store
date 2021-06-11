@@ -6,6 +6,8 @@ The whole idea started for this website through my girlfriend. My lovely girlfri
 
 ## Screenshots
 
+![Home Page](../assets/LandingPage.png)
+
 ## Technologies Used
 
 - HTML, CSS, JS(JSX with React)
