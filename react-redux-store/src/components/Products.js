@@ -7,6 +7,7 @@ export default function Products() {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.productReducer);
   const paintings = products[0].paintings;
+  console.log(products);
   useEffect(() => {
     getProducts(dispatch);
   }, []);
